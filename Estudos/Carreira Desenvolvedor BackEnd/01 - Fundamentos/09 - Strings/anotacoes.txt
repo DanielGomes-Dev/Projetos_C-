@@ -1,0 +1,63 @@
+Guid - Global Unique Identifier;
+
+var id = Guid.NewGuid();
+id.ToString();
+id.ToString().Substring(0,8);
+
+Console.WriteLine(id);
+
+id = new Guid("guidddddd-dddd-ddddd");
+
+
+Interpolação de strings;
+
+var text = "ola";
+var interPolar = text + "Daniel";
+var interPolar2 = string.Format ("{0} Daniel", text);
+var interPolar = $"{text} Daniel";
+var interPolar = $@"{text} 
+                    Daniel";
+
+
+Comparando Textos;
+var texto = testando;
+
+Console.WriteLine( text.CompareTo("testando") )
+0 -> não tem diferença
+1 -> tem diferença
+
+Console.WriteLine( text.Contains("testando") ) ->: contem
+Console.WriteLine( text.Contains("testando", StringComparison.OrdinalIgnoreCase) ) -> ignora o case sesitive;
+
+
+text.StartsWith("t")
+text.StartsWith("T", StringComparison.OrdinalIgnoreCase)
+
+text.EndsWith("o")
+text.EndsWith("O",  StringComparison.OrdinalIgnoreCase)
+
+
+text.Equals("testando")
+text.Equals(Testando", StringComparison.OrdinalIgnoreCase)
+
+text.IndexOf("e") -> retornar a primeira o ocorrencia do caracter; na posição;
+
+text.toLower() -> converte tudo para minusculo;
+text.ToUpper() -> Converte tudo para maiusculo;
+text.Insert(5, "s") -> insere texto/caracter e insere na posição;
+text.Remove(5,5);
+text.Length; -> tras quantidade de caracteres de uma string;
+
+
+text.Replace("testando", "teste"); 
+text.Split(" "); quebra onde tem espaço; retornar uma lista como resultado;
+text.Substring(5, 5) -> pega apenas 5 caracteres a partir do 5;
+text.Substring(5, text.LastIndexOf("o") ) 
+
+text.Trim() -> remove espaços no inicio e no final;
+
+string build;
+
+var text = new StringBuilder(); -> System.Text;
+text.toString();
+text.Append("texto");

@@ -1,0 +1,79 @@
+• Encapsulamento
+• Modificadores de visibilidade
+• Accessors e mutators
+• Properties
+ – Read-only e write-only properties
+ – Auto-implemented properties
+ – Static properties
+ – Visibilidade
+• Object initializers
+• Namespaces
+ – A diretiva using
+ – Namespaces aliases
+• Partial classes
+• Extension methods
+
+O princípio do encapsulamento consiste em
+esconder detalhes de implementação de
+quem chama o objeto
+
+No encapsulamento, também é importante não
+expor o estado do objeto de forma direta – O estado do objeto é uma informação interna ao
+objeto
+
+É um dos pilares da orientação a objetos
+Encapsulamento
+Herança
+Polimorfismo
+
+• Por que usar o encapsulamento? 
+    – Define responsabilidades aos objetos 
+
+• Aumenta a coesão • Agrupa funcionalidades comuns 
+    – Esconde a implementação 
+
+• A forma como o objeto manipula os fields e implementa
+os métodos não interfere em quem usa este objeto
+    – Facilita a manutenção do código 
+
+• Mudar fields ou implementação de métodos não “quebra”
+o código existente
+    – Facilita a extensão do código 
+
+• Novos métodos e/ou fields podem ser criados no objeto
+sem prejuízo à aplicação
+
+• Quando usar o encapsulamento? 
+    – Sempre
+
+
+#Modificadores de Visibilidade
+
+• Controlam a visibilidade de elementos
+– Tipos de dados
+• Classes
+• Estruturas
+• Enums
+– Membros
+• Fields
+• Properties
+• Métodos
+• Construtores
+
+
+Modificador Significado
+
+private Visível apenas à classe/estrutura que declarou o
+elemento.
+
+public Sem restrição de acesso.
+
+protected Visível à classe que declarou e também às suas
+subclasses.
+
+internal Visível apenas dentro do próprio assembly.
+
+protected internal Visível à classe que declarou, subclasses e dentro
+do próprio assembly.
+
+"deixar sempre Privado" -> utilizar atraves de getters e setters; -> Accessors e Mutators;

@@ -1,0 +1,28 @@
+https://www.youtube.com/watch?v=PKMm-cHe56g
+
+ 5h
+
+.Net Framework;
+
+.Net Core; ***
+
+XAMARIN;
+
+
+.cs -> C Shrap
+
+modulos e pacotes inserir no codio ape4nas o que vou usar;
+
+Modulo system -> sistema operacional usuario
+
+using System; IO, Text, Net,
+
+pesquisar sobre modulos do c#
+
+Console.Write("Hello World"); -> imprimir na tela;
+ Console.WriteLine("Meu Nome é Daniel"); -> Quebra a linha no final
+Console.ReadLine(); -> ler a tela o que o usuario escreveu; Usar para evitar o console de fechar;
+
+
+.NET para iniciantes
+	https://www.youtube.com/watch?v=bhWxMjWWpaA&list=PLxd1RHU8YgYkHCbZqtqWuaYHASNERx-Tn

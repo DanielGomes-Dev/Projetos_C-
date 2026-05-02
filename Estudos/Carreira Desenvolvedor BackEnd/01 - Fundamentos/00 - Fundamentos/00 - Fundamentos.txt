@@ -1,0 +1,79 @@
+Linguagens e Compiladores;
+    Linguagens Tipadas e Não Tipadas;
+    Compiladas e Interpretadas;
+    Alto e Baixo Nivel;
+    Compiladores;
+
+C#;
+    Por que utilizar o cSharp; -> Anders Hejlsberg
+    Gerenciada -> não nescessario se preocupar com alocamento de memoria;
+
+    IL -> Linguagem intermediaria; -> JIT
+
+
+Frameworks;
+    .NET Framework; -> Legado;
+    .NET Core; -> roda no linux e no mac;
+    .NET Standard; -> garante q o que estamos escrevendo vai rodas no Framework e no Core -> Contrato;
+    .NET 5 -> unindo os Frameworks;
+
+.NET;
+    Instalação;
+
+    CLI;
+        Comand Line Interface;
+        dotnet --version; -> Ve a VErsão do dotnet;
+        dotnet --list-sdks; -> Lista versões do dotnet instaladas;
+        dotnet --list-runtimes; -> Caminhos dos itens q executam a aplicação
+        dotnet help
+
+    Visual Studio Code;
+
+    Tipos de Projetos;
+        Class Library;
+        Console Application;
+        Projeto Web;
+            Asp .net Web
+            Asp .net MVC
+            Asp .net WebAPI
+
+        Projeto Testes;
+            Microsoft Tests;
+    
+    Criando um Novo Projeto;
+        dotnet new console; -> Novo App Console
+                   classlib; -> Nova Class Library;
+                   web; -> Novo Projeto ASP.NET Core
+                   mvc; -> Novo Projeto ASP.NET Core;
+                   webapi;mstest -> Novo Projeto Microsoft Test;
+
+        dotnet new console -o MeuApp;
+
+        dotnet restore -> atualiza todas dependencias;
+        dotnet clean;
+        dotnet build;
+        dotnet run; -> executar a aplicação;
+
+        Váriaveis de Ambiente;
+
+        dotnet run --environment=$SEU_AMBIENTE;
+        dotnet run --environment=Development;
+        dotnet run --environment=Production;
+
+    Estrutura de um Console App;
+        - Arquivo.csproj
+            - Formato XML
+            - Definições do Projeto
+            - Presente em todo projeto .net
+        -Program.cs;
+            - Arquivo principal C#;
+            - Porta de entrada;
+            - Será o primeiro a ser Executado;
+
+        pasta bin é o resultado do build; (binary)
+        pasta obj -> debug;
+
+
+    Debug;
+        release x debug;
+        dotnet run -> release;

@@ -1,0 +1,199 @@
+Escopo de Um Programa:
+    - Importações;
+    - Namespace;
+    - Classe;
+    - Método Principal;
+
+Namespace;
+    Não podemos ter duas classes com mesmo nome em um namespace;
+    O ideal é ter apenas um namespace e uma classe por arquivo;
+    Durante a execução, todos os arquivos do C# serão unificados;
+    A Divisão fisica se perderá
+    Sobrará apenas a divisão lógica, que são os namespace
+    usar using para chamar namespace em outro arquivo
+
+Using;
+    Importações definem as bibliotecas que nosso programa irá utilizar;
+    Por padrão só o basico vem incluiso
+    Feito no começo do programa;
+    utilizando a palavra reservado using;
+
+    Organizar nosso arquivo em pastas e namespaces é fundamental;
+    Entender vem a organização é fundamental;
+    use e abuse dos namespaces;
+
+Variaveis;
+    short/ushort;
+    int/uint;
+    long/ulong; (u -> sem sinal);   
+    float (F); float test = 1200.123F;
+    double;
+    decimal (M) decimal test 223.123M;
+    bool -> true false;
+    char -> 1 caracter; char letraA = 'a'
+    string -> lista de char -> string nome = "Daniel"
+    var -> substitui qualquer tipo;
+    var nome = "1234",
+    byte -> 8-bit (0 até 255); unicode caracteres
+    sbyte -> bytes negativo (-127 a 127);
+
+
+
+Constantes;
+    const int nome = 11,
+
+Palavras Reservadas;
+
+Comentarios;
+
+Tipos Primitivos;
+    buillt-in types;
+    Definir o tipo correto otimiza a execução do programa;
+    Tipos simples;
+    Enumeradores(Enums);
+    Estruturas(Structs);
+    Tipos Nulo(Nullable Types);
+
+    Cada tipo primitivos possui uma capacidade;
+    int -2,147,483,648 até 2,147,483,648;
+
+    short/ushort;
+    int/uint;
+    long/ulong; (u -> sem sinal);   
+    float (F); float test = 1200.123F;
+    double;
+    decimal (M) decimal test 223.123M;
+    bool -> true false;
+    char -> 1 caracter; char letraA = 'a'
+    string -> lista de char -> string nome = "Daniel"
+    var -> substitui qualquer tipo;
+    var nome = "1234",
+    byte -> 8-bit (0 até 255); unicode caracteres
+    sbyte -> bytes negativo (-127 a 127);
+    object -> object idade = 14; -> não se inporta com a tipagem; -> qualquer coisa;
+    dynamic;
+    Nullable Types; int? idade = null;
+
+System;
+    No .NET tudo começa de um tipo base chamado system;
+    Todo e qualquer tipo, seja built-in ou complexo deriva ele;
+    Ele é a base de todos os obnjetos no .NET;
+
+
+
+Alias;
+    Alias é um apelido que todo tipo no .NET tem;
+    Por exemplo System.String tem o alias string;
+                Int32 -> int
+
+Valores Padroes;
+    Todo tipo built-in já possui um valor padrão;
+    int => 0;
+    float => 0;
+    decimal => 0;
+    bool => false;
+    char => '\0';
+    string => "";
+
+Conversões de dados;
+    Implicita;
+        Passagem de dados e dados compativeis;
+            float valor = 25.8F;
+            int outro = 25;
+            valor = outro;
+        Ao contrario nao funciona pois float nao cabe em um int;
+        
+    Explitica;
+        informar o tipo;
+            int inteiro = 100;
+            unit inteiroSemSinal = (unit)inteiro; -> Conversão explicita;
+
+Parse -> converter um tipo para outro;
+    int inteiro = int.Parse("100"); -> sempre espera uma string;
+
+Convert -> Similar ao Parse; Permite converter varios tipos de valor nao apenas string; -> 
+    int inteiro = Convert.ToInt32("100");
+
+
+Operadores Aritmeticos;
+/ * + -
+
+Operadores Aritimeticos;
+    += -= *= /= ++ --
+
+Operadores de Comparação;
+    ==
+    !=
+    >
+    <
+    >=
+    <=
+
+
+Utilizando operadores;
+
+Operadores Logicos;
+    && - || - !
+
+
+Tipos de Referencias e Tipos de Valores;
+    Heap e Stack
+
+Structs
+    struct
+
+    struct Product 
+    {
+        //Propriedades;
+        //Metodos;
+    }
+
+    struct Product
+    {
+        //Propriedade;
+        public int Id;
+        public float Price;
+
+        //Metodo Construtor;
+        public Product(int id, float price){
+            Id = id;
+            Price = price
+        }
+
+        //Metodos;
+        public float PriceInDolar(Float Dolar){
+            return Price * dolar;
+        }
+
+    }
+
+    var product = new Product(1, 10.10f);
+    product.Id = 1;
+    product.Price = 10.11f;
+
+    Metodo Construtor é um metodo com o mesmo nome da estrutura;
+
+
+Enumeradores;
+    Usado para fornecer uma melhor visualização do código;
+    Substituem o uso de inteiros;
+    Usados em listas curtas;
+    Usados em dados Fixos;
+    Sempre em maiusculo
+        Começar com E;
+
+    enum EEstadoCivil
+    {
+        //Enumeradores;
+        Solteiro = 1;
+        Casado = 2;
+        Divorciado = 3;
+    }
+
+    struct Cliente
+    {
+        public string Nome;
+        public EEstadoCivil EstadoCiVil;
+    }
+
+    var cliente = new Cliente("João Silva, EEstadoCivil.Casado");

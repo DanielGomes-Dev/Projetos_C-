@@ -1,0 +1,85 @@
+# =========================
+# Build results
+# =========================
+bin/
+obj/
+
+# =========================
+# User-specific files
+# =========================
+*.user
+*.userosscache
+*.suo
+*.userprefs
+
+# =========================
+# Visual Studio
+# =========================
+.vs/
+*.vscode/
+
+# VS Code settings (opcional, comente se quiser versionar configs)
+.vscode/*
+
+# =========================
+# Rider / JetBrains
+# =========================
+.idea/
+*.sln.iml
+
+# =========================
+# Logs
+# =========================
+*.log
+
+# =========================
+# OS files
+# =========================
+.DS_Store
+Thumbs.db
+
+# =========================
+# NuGet
+# =========================
+*.nupkg
+*.snupkg
+packages/
+.nuget/
+
+# =========================
+# Test results
+# =========================
+TestResults/
+
+# =========================
+# Coverage
+# =========================
+coverage/
+*.coverage
+*.coveragexml
+
+# =========================
+# Dotnet CLI
+# =========================
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# =========================
+# Publish output
+# =========================
+publish/
+
+# =========================
+# Environment variables
+# =========================
+.env
+.env.*
+
+# =========================
+# Temporary files
+# =========================
+*.tmp
+*.temp
+
+*.png
